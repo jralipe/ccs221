@@ -1,0 +1,1 @@
+Mandala Pattern Assignment
