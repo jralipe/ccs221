@@ -1,0 +1,12 @@
+import turtle
+jonh = turtle.Turtle()
+jonh.speed(100)
+
+for i in range(275):
+  jonh.right(43)
+  jonh.forward(150)
+  jonh.right(95)
+  jonh.forward(350)
+  jonh.right(71)
+
+turtle.done
