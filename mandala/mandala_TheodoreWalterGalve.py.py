@@ -193,6 +193,8 @@ def draw_art(moving_angle):
 
 draw_art(25)
 
+#Credits to Amhed Koodh of Youtube.com.
+
 
 
 
