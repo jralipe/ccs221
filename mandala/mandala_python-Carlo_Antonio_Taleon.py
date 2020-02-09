@@ -64,7 +64,7 @@ for turtles in t1:
     turtles.setpos(0,0)
     turtles.pensize(1)
 
-#WHITE PETAL PATETERN
+#WHITE PETAL PATTERN
 for turtles in t1:
     turtles.pencolor("white"); turtles.fillcolor("white")
     turtles.begin_fill()
@@ -95,7 +95,7 @@ for turtles in t1:
     turtles.end_fill()
     turtles.right(90+45)
 
-    for i in range(10):
+    for i in range(3):
         turtles.pencolor("gold"); turtles.fillcolor("gold")
         turtles.up()
         turtles.setpos(0,0)
