@@ -1,0 +1,46 @@
+import turtle
+window = turtle.Screen()
+window.bgcolor("#404040")
+meme = turtle.Turtle()
+
+meme.speed(1000)
+def circle(size, y):
+        meme.width(3)
+        meme.up()
+        meme.setposition(0,y)
+        meme.down()
+        meme.circle(size)
+
+meme.color("red")
+circle(100, -150)
+meme.color("lime")
+circle(130,-180)
+
+for i in range(20):
+    meme.width(2)
+    meme.color("black")
+    meme.penup()
+    meme.goto(0,-50)
+    meme.pendown()
+    meme.circle(80,steps=6)
+
+    meme.width(2)
+    meme.color("#ff0066")
+    meme.forward(100)
+    meme.left(160)
+    meme.forward(100)
+    meme.left(140)
+    meme.forward(100)
+    meme.left(160)
+    meme.forward(100)
+
+meme.color("blue")
+for i in range(18):
+	meme.up()
+	meme.setpos(0, -50)
+	meme.forward(110)
+	meme.down()
+	meme.dot(10)
+	meme.left(20)
+	
+meme.hideturtle()

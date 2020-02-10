@@ -1,0 +1,71 @@
+import turtle
+
+window = turtle.Screen()
+window.bgcolor("#333333")
+j = turtle.Turtle()
+j.color("aqua")
+j.width(5)
+j.up()
+j.left(180)
+j.forward(180)
+j.down()
+j.left(90)
+j.forward(200)
+j.up()
+j.right(90)
+j.down()
+j.forward(100)
+j.up()
+j.right(90)
+j.down()
+j.forward(50)
+
+j.up()
+j.right(90)
+j.forward(150)
+j.down()
+j.forward(100)
+j.left(90)
+j.forward(50)
+for i in range(3):
+
+    j.left(90)
+    j.forward(100)
+
+j.up()
+j.forward(50)
+j.down()
+for i in range(2):
+    j.forward(100)
+    j.left(90)
+
+j.forward(100)
+j.right(180)
+j.forward(100)
+for i in range(2):
+    j.right(90)
+    j.forward(100)
+j.right(90)
+j.forward(50)
+j.right(90)
+j.forward(100)
+
+
+j.up()
+j.forward(50)
+j.right(90)
+j.forward(50)
+j.left(90)
+j.down()
+j.left(90)
+j.forward(100)
+for i in range(2):
+    j.right(90)
+    j.forward(100)
+
+turtle.done
+
+
+
+
+
