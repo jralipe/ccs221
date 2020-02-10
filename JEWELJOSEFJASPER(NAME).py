@@ -130,6 +130,8 @@ def R(j):
     j.forward(60)
     j.up()
     j.forward(200)
+    
+# got some ideas on how to make it uniform at: https://stackoverflow.com/questions/43689387/draw-letters-in-turtle
 
 J(j),A(j),S(j),P(j),E(j),R(j)
 turtle.done( )
