@@ -1,0 +1,129 @@
+import turtle
+screen=turtle.Screen()
+trtl=turtle.Turtle()
+screen.setup(1000,620)
+screen.bgcolor('white')
+clr=['black','green','blue','yellow','purple','white']
+trtl.pensize(2)
+trtl.speed(-20)
+trtl.shape('arrow')
+#forbackgound
+
+#star
+trtl.color('black','white')
+trtl.begin_fill()
+a = 3
+while a < 300:
+    trtl.forward(a)
+    trtl.left(170)
+    a = a + 2
+trtl.end_fill()
+trtl.penup()
+trtl.goto(0,0)
+trtl.pendown()
+trtl.color('white','black')
+trtl.begin_fill()
+b = 3
+while b < 200:
+    trtl.forward(b)
+    trtl.left(170)
+    b = b + 2
+trtl.end_fill()
+trtl.penup()
+trtl.goto(0,0)
+trtl.pendown()
+trtl.color('black','white')
+trtl.begin_fill()
+b = 5
+while b < 100:
+    trtl.forward(b)
+    trtl.left(170)
+    b = b + 2
+trtl.end_fill()
+trtl.penup()
+trtl.home()
+trtl.pendown()
+#1st circle
+trtl.penup()
+trtl.pencolor('black')
+m=0
+for i in range(36):
+      m=m+1
+      trtl.penup()
+      trtl.setheading(-10*i+60)
+      trtl.forward(150)
+      trtl.pendown()
+      s=5
+      for x in range(10):
+          s=s+2
+          trtl.pencolor('black')
+          trtl.forward(s)
+          trtl.left(90)
+      trtl.penup()
+      trtl.forward(20)
+      if m==36:
+        m=0
+      trtl.home()
+#2ndcircle
+trtl.color('black')
+trtl.setpos(0,-210)
+trtl.pendown()
+trtl.pensize(70)
+trtl.circle(210)
+trtl.penup()
+trtl.home()
+trtl.pendown()
+#3rdcircle
+m=0
+for i in range(18):
+      trtl.pensize(2)
+      trtl.penup()
+      trtl.setheading(-20*i+60)
+      trtl.forward(200)
+      trtl.pendown()
+      s=0
+      for x in range(10):
+          s=s+3
+          trtl.pencolor('white')
+          trtl.forward(s)
+          trtl.right(250)
+          trtl.forward(s)
+          
+      trtl.penup()
+      trtl.forward(20)
+      if m==18:
+        m=0
+      trtl.home()
+#lastcircle
+trtl.color('black')
+trtl.setpos(0,-280)
+trtl.pendown()
+trtl.pensize(10)
+trtl.circle(280)
+trtl.penup()
+trtl.home()
+trtl.pendown()
+#signs
+m=0
+for i in range(72):
+      trtl.pensize(3)
+      trtl.penup()
+      trtl.setheading(-5*i+60)
+      trtl.forward(230)
+      trtl.pendown()
+      s=5
+      for x in range(1):
+          s=s+3
+          trtl.pencolor('black')
+          trtl.forward(50)
+          trtl.left(120)
+          trtl.forward(50)
+          trtl.left(120)
+          trtl.forward(50)
+          trtl.left(120) 
+      trtl.penup()
+      trtl.forward(20)
+      if m==72:
+        m=0
+      trtl.home()
+trtl.ht()
