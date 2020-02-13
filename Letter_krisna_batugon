@@ -1,0 +1,65 @@
+import turtle
+
+v = turtle.Turtle()
+window = turtle.Screen()
+window.bgcolor("black")
+v.speed(2000)
+v.width()
+
+def circle(size):
+    v.color("white")
+    v.penup()
+    v.setposition(0,-200)
+    v.pendown()
+    v.circle(size)
+    
+circle(150)
+v.color("yellow")
+
+v.penup()
+v.setposition(0,0)
+v.pendown()
+    
+def pattern (iteration):
+    for i in range(iteration):
+        v.color("yellow")
+        v.penup()
+        v.setposition(0,-50)
+        v.pendown()
+        v.circle(50)
+
+        v.width(1)
+        v.color("lime")
+        v.forward(90)
+        v.left(60)
+        v.left(18)
+        v.forward(90)
+        v.left(60)
+        v.left(18)       
+        v.forward(90)
+        v.left(60)
+        v.left(18)
+        v.forward(90)
+        v.left(60)
+        v.left(18)
+        v.forward(90)
+        v.left(60)
+        v.left(18)
+        v.forward(90)
+        v.left(60)
+        v.left(18)
+   
+   
+##        v.up()
+##        v.setpos(0,0)
+##        v.down()
+##
+##        v.right(2)
+
+    
+turtle.done()
+
+
+
+    
+
