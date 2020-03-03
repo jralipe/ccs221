@@ -1,0 +1,233 @@
+Flag = True
+def setup():
+    size(700, 500)
+    smooth();
+    frameRate(80);
+def draw():
+    global flag
+    background(8, 35, 87)
+    rainbow()
+    poptart()
+    stars()
+
+def stars():
+    fill(255)
+    square(random(height),random(width), 9)
+    square(random(width),random(height), 9)
+    square(random(width),random(height), 9)
+    square(random(width),random(height), 9)
+    
+    
+def rainbow():
+    noStroke();
+    for i in range(6):
+        if i == 0:
+            fill(260, 0, 0) #RED
+        elif i == 1:
+            fill(247, 136, 13) #ORANGE
+        elif i == 2:
+            fill(260, 242, 0) #YELLOW
+        elif i == 3:
+            fill(0, 260, 0) #GREEN
+        elif i == 4:
+            fill(63, 72, 204) #BLUE
+        elif i == 5:
+            fill(38, 38, 217) #INDIGO
+        
+        if i == 0:
+            rect(mouseX, mouseY, 60, 20)
+            rect(mouseX+60, mouseY-10, 60, 20)
+            rect(mouseX+60+60, mouseY, 60, 20)
+            rect(mouseX+60+60+60, mouseY-10, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY, 60, 20)
+        
+        if i == 1:
+            rect(mouseX, mouseY+20, 60, 20)
+            rect(mouseX+60, mouseY+10, 60, 20)
+            rect(mouseX+60+60, mouseY+20, 60, 20)
+            rect(mouseX+60+60+60, mouseY+10, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY+20, 60, 20)
+        
+        if i == 2:
+            rect(mouseX, mouseY+40, 60, 20)
+            rect(mouseX+60, mouseY+30, 60, 20)
+            rect(mouseX+60+60, mouseY+40, 60, 20)
+            rect(mouseX+60+60+60, mouseY+30, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY+40, 60, 20)
+            
+        if i == 3:
+            rect(mouseX, mouseY+60, 60, 20)
+            rect(mouseX+60, mouseY+50, 60, 20)
+            rect(mouseX+60+60, mouseY+60, 60, 20)
+            rect(mouseX+60+60+60, mouseY+50, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY+60, 60, 20)
+            
+        if i == 4:
+            rect(mouseX, mouseY+80, 60, 20)
+            rect(mouseX+60, mouseY+70, 60, 20)
+            rect(mouseX+60+60, mouseY+80, 60, 20)
+            rect(mouseX+60+60+60, mouseY+70, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY+80, 60, 20)
+        
+        if i == 5:
+            rect(mouseX, mouseY+100, 60, 20)
+            rect(mouseX+60, mouseY+90, 60, 20)
+            rect(mouseX+60+60, mouseY+100, 60, 20)
+            rect(mouseX+60+60+60, mouseY+90, 60, 20)
+            rect(mouseX+60+60+60+60, mouseY+100, 60, 20)
+            
+def poptart():
+#BODY OUTLINE
+    fill(0, 0 , 0)
+    square(mouseX+300, mouseY, 9) #upper left pixel
+    square(mouseX+469, mouseY, 9) #upper right pixel
+    square(mouseX+300, mouseY+ 125, 9) #lower left pixel
+    square(mouseX+469, mouseY+125, 9) #lower right pixel
+    rect(mouseX+291, mouseY+9, 9, 115) #left down line
+    rect(mouseX+478, mouseY+9, 9, 115) #right down line
+    rect(mouseX+309, mouseY-9, 160, 9) #upper line
+    rect(mouseX+309, mouseY+134, 160, 9) #lower line
+        
+#BEIGE BODY FILL
+    fill(255, 204, 153) #poptart beige uwu
+    rect(mouseX+309, mouseY, 160, 9) #upper beige 1
+    rect(mouseX+300, mouseY+9, 178, 9) #upper beige 2
+    rect(mouseX+309, mouseY+125, 160, 9) #lower beige 1
+    rect(mouseX+300, mouseY+116, 178, 9) #lower beige 2
+    rect(mouseX+300, mouseY+18, 178, 100) #middle poptart uwu
+
+#PINK POPTART GROUND
+    fill(255, 153, 255) #pink poptart uwu
+    square(mouseX+318, mouseY+18, 9) #upper pink pixel left
+    square(mouseX+451, mouseY+18, 9) #upper pink pixel right\
+    square(mouseX+318, mouseY+105, 9) #lower pink pixel left
+    square(mouseX+451, mouseY+105, 9) #lower pink pixel right
+    rect(mouseX+309, mouseY+27, 9, 79) #left pink down line
+    rect(mouseX+460, mouseY+27, 9, 79) #right pink down line
+    rect(mouseX+327, mouseY+9, 124, 9) #upper line
+    rect(mouseX+327, mouseY+18, 124, 9) #upper line 2
+    rect(mouseX+316, mouseY+27, 144, 9) #upper line 3
+    rect(mouseX+327, mouseY+114, 124, 9) #lower line
+    rect(mouseX+327, mouseY+105, 124, 9)#lower line 2
+    rect(mouseX+316, mouseY+96, 144, 9) #lower line 3
+    rect(mouseX+318, mouseY+36, 144, 61) #middle pink
+
+#POPTART DOTS
+    fill(255, 51, 153)
+    square(mouseX+327, mouseY+27, 9)
+    square(mouseX+320, mouseY+81, 9)
+    square(mouseX+327, mouseY+105, 9)
+    square(mouseX+356, mouseY+94, 9)
+    square(mouseX+338, mouseY+63, 9)
+    square(mouseX+372, mouseY+18, 9)
+    square(mouseX+399, mouseY+18, 9)
+    square(mouseX+435, mouseY+36, 9)
+    square(mouseX+365, mouseY+54, 9)
+    square(mouseX+374, mouseY+81, 9)
+    
+#CAT HEAD OUTLINE
+    fill(0)
+    square(mouseX+401, mouseY+125, 9) #left cheek pix
+    square(mouseX+392, mouseY+116, 9) #left chek ek pix 2
+    rect(mouseX+383, mouseY+71, 9, 45) #main left cheek
+    #fill(255)
+    rect(mouseX+409, mouseY+134, 90, 9) #chin
+    square(mouseX+498, mouseY+125, 9) #right cheek pix 
+    square(mouseX+507, mouseY+116, 9) #right cheek pix 2
+    rect(mouseX+516, mouseY+71, 9, 45) #main right cheek
+    #stroke(0);
+    fill(127, 127, 127)
+    rect(mouseX+410, mouseY+125, 88, 9)
+    rect(mouseX+401, mouseY+116, 106, 9)
+    rect(mouseX+392, mouseY+107, 124, 9)
+    rect(mouseX+392, mouseY+98, 124, 9)
+    rect(mouseX+392, mouseY+89, 124, 9)
+    rect(mouseX+392, mouseY+80, 124, 9)
+    rect(mouseX+392, mouseY+71, 124, 9)
+
+#CAT EARS UWU
+    fill(0)
+    rect(mouseX+392, mouseY+35, 9, 36) #left
+    rect(mouseX+402, mouseY+25, 18, 9)
+    square(mouseX+420, mouseY+34, 9)
+    square(mouseX+429, mouseY+43, 9)
+    rect(mouseX+438, mouseY+52, 31, 9)
+    rect(mouseX+507, mouseY+35, 9, 36) #right
+    rect(mouseX+489, mouseY+25, 18, 9)
+    square(mouseX+479, mouseY+35, 9)
+    square(mouseX+470, mouseY+44, 9) #forehead line
+    #stroke(0);
+    fill(127, 127, 127)
+    rect(mouseX+401, mouseY+61, 106, 10)
+    rect(mouseX+401, mouseY+52, 38, 9)
+    rect(mouseX+401, mouseY+43, 28, 9)
+    rect(mouseX+401, mouseY+34, 19, 9)
+    rect(mouseX+469, mouseY+52, 38, 9)
+    rect(mouseX+478, mouseY+43, 29, 9)
+    rect(mouseX+487, mouseY+34, 20, 9)
+    
+#CAT BLUSH
+    fill(255, 153, 153)
+    square(mouseX+401, mouseY+98, 18) #left blush
+    square(mouseX+498, mouseY+98, 18) #right blush
+    fill(0) #left eye black
+    rect(mouseX+419, mouseY+89, 18, 9)
+    square(mouseX+428, mouseY+80, 9)
+    fill(255) #left eye white
+    square(mouseX+419, mouseY+80, 9)
+    fill(0) #right eye black
+    rect(mouseX+480, mouseY+89, 18, 9)
+    square(mouseX+489, mouseY+80, 9)
+    fill(255) #right eye white
+    square(mouseX+480, mouseY+80, 9)
+
+#CAT NOSE
+    fill(0)
+    square(mouseX+462, mouseY+89, 9)
+
+#CAT MOUTH
+    rect(mouseX+ 426, mouseY+107, 9, 18) #left
+    rect(mouseX+480, mouseY+107, 9, 18) #right
+    rect(mouseX+435, mouseY+116, 45, 9)
+    square(mouseX+453, mouseY+107, 9)
+
+#CAT TAIL
+    fill(0)
+    square(mouseX+282, mouseY+99, 9)
+    rect(mouseX+264, mouseY+90, 27, 9)
+    square(mouseX+264, mouseY+81, 9)
+    rect(mouseX+255, mouseY+72, 9, 18)
+    rect(mouseX+246, mouseY+63, 9, 18)
+    rect(mouseX+237, mouseY+45, 9, 27)
+    rect(mouseX+246, mouseY+45, 18, 9)
+    rect(mouseX+264, mouseY+45, 9, 18)
+    rect(mouseX+273, mouseY+54, 9, 18)
+    rect(mouseX+282, mouseY+63, 9, 18)
+    fill(127, 127, 127) #tail fill
+    rect(mouseX+273, mouseY+81, 18, 9)
+    rect(mouseX+264, mouseY+72, 18, 9)
+    rect(mouseX+255, mouseY+63, 18, 9)
+    rect(mouseX+246, mouseY+54, 18, 9)
+
+#CAT LEGS
+    fill(0) #back legs
+    rect(mouseX+282, mouseY+124, 18, 9)
+    rect(mouseX+273, mouseY+134, 9, 18)
+    rect(mouseX+273, mouseY+152, 27, 9)
+    rect(mouseX+300, mouseY+143, 9, 18)
+    square(mouseX+309, mouseY+143, 9)
+    rect(mouseX+327, mouseY+143, 9, 18) #back legs 2
+    rect(mouseX+336, mouseY+152, 18, 9)
+    square(mouseX+354, mouseY+143, 9)
+    square(mouseX+409, mouseY+143, 9) #front legs
+    rect(mouseX+418, mouseY+152, 18, 9)
+    rect(mouseX+436, mouseY+143, 9, 18)
+    square(mouseX+454, mouseY+143, 9)
+    rect(mouseX+463, mouseY+152, 18, 9)
+    square(mouseX+481, mouseY+143, 9)
+    fill(127, 127, 127)
+    rect(mouseX+282, mouseY+133, 27, 10)
+    rect(mouseX+282, mouseY+142, 18, 10)
+    rect(mouseX+336, mouseY+143, 18, 9)
+    rect(mouseX+418, mouseY+143, 18, 9)
+    rect(mouseX+463, mouseY+143, 18, 9)
