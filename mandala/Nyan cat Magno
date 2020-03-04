@@ -1,0 +1,141 @@
+catx = 50
+caty = 50
+flag = True
+conway = None
+pg = None
+def setup():
+    size(1100,600)
+    background(1)
+    frameRate(80) 
+
+
+                 
+
+
+def draw():
+    background(21,1,201)
+    global catx
+    global caty
+    global flag
+      #stars
+    fill (random(255),random(300),random(255))
+    rect(500, 400, 10,20)
+    rect(500,430,10,20)
+    rect(510,419,20,10)
+    rect(480,419,20,10)
+    
+    rect( 100,400,10,20)
+    rect(100,430,10,20)
+    rect(110, 419,20,10)
+    rect(80,419,20,10)
+    
+    rect( 400,100,10,20)
+    rect(400,130,10,20)
+    rect(410, 119,20,10)
+    rect(380,119,20,10)
+    
+    rect(900,200,10,20)
+    rect(900,230,10,20)
+    rect(910,219,20,10)
+    rect(880,219,20,10)
+    
+    rect(800,500,10,20)
+    rect(800,530,10,20)
+    rect(810,519,20,10)
+    rect(780,519,20,10)
+    
+    square(700,50,10)
+    square(100,300,10)
+    square(800,200,10)
+    square(50,10,10)
+    square(700,500,10)
+    square(200,38,10)
+    
+    #rainbow
+    fill(237,28,36)
+    rect(catx+-700,caty+15,1000,25)
+    fill(254,111,24)
+    rect(catx+-700,caty+40,1000,25)
+    fill(255,244,36)
+    rect(catx+-700,caty+65,1000,25)
+    fill(48,216,38)
+    rect(catx+-700,caty+90,1000,25)
+    fill(1,113,250)
+    rect(catx+-700,caty+115,1000,25)
+    fill(141,24,248)
+    rect(catx+-700,caty+140,1000,25)
+    #body
+    fill(255,127,39)
+    rect(catx+300,caty+15,150,150,)
+    fill(255,15,92)
+    rect(catx+310,caty+25,130,130)
+    #head
+    fill(127,127,127)
+    noStroke()
+    rect(catx+380,caty+70,140,40)
+    rect(catx+390,caty+40,40,30)
+    rect(catx+400,caty+30,20,10)
+    square(catx+420,caty+40,10)
+    square(catx+430,caty+50,10)
+    rect(catx+430,caty+60,40,10)
+    square(catx+460,caty+50,10)
+    square(catx+470,caty+40,10)
+    rect(catx+480,caty+30,20,10)
+    rect(catx+470,caty+40,40,30)
+    #rect(catx+510,caty+70,10,40
+    rect(catx+390,caty+110,20,20)
+    square(catx+500,caty+110,10)
+    square(catx+400,caty+120,10)
+    rect(catx+490,caty+110,20,20)
+    rect(catx+410,caty+110,80,30)
+    
+    #eyes
+    fill(255)
+    square(catx+410,caty+70,10)
+    fill(0)
+    square(catx+420,caty+70,10)
+    square(catx+410,caty+80,10)
+    square(catx+420,caty+80,10)
+    fill(255)
+    square(catx+470,caty+70,10)
+    fill(0)
+    square(catx+480,caty+70,10)
+    square(catx+470,caty+80,10)
+    square(catx+480,caty+80,10)
+    # #mouth
+    fill(0)
+    rect(catx+420,caty+110,60,10)
+    square(catx+420,caty+100,10)
+    square(catx+470,caty+100,10)
+    square(catx+440,caty+100,10)
+    # #arm and legs and tail
+    fill(127)
+    rect(catx+430,caty+165,10,30)
+    rect(catx+410,caty+165,10,30)
+    rect(catx+340,caty+165,10,30)
+    rect(catx+320,caty+165,10,30)
+    rect(catx+260,caty+50,40,20)
+    rect(catx+250,caty+40,30,10)
+    rect(catx+230,caty+30,30,10)
+    rect(catx+210,caty+20,30,10)
+
+     
+    if flag:
+            catx +=1
+            
+    if catx > 600:
+            flag = False
+            
+    if catx >550:
+            caty +=1
+            
+    if caty > 300:
+            catx -=1
+            
+    if catx < 60:
+            caty -=1
+            
+    if caty < 100:
+            catx +=1
+            
+ 
